@@ -2,7 +2,7 @@
   <div>
     <Html lang="en-US">
       <Head>
-        <Title>Restaurantly</Title>
+        <Title>Top 50 Restaurants in the World</Title>
         <Meta name="description" content="My page is cool" />
         <Link
           rel="preload"
@@ -11,15 +11,11 @@
         />
       </Head>
     </Html>
-    <div class="container text-center">
-      <h1>Welcome to Restaurantly</h1>
-      <a href="/restaurants">Go to restaurants</a>
-    </div>
+
+    <NuxtLayout name="custom">
+      <div class="container">
+        <RestaurantTable />
+      </div>
+    </NuxtLayout>
   </div>
 </template>
-
-<style scoped>
-.container {
-  margin-top: 5rem;
-}
-</style>
